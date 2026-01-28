@@ -1,0 +1,288 @@
+🎯 AI CODING PROMPT — PERSONAL PORTFOLIO WEBSITE
+
+Project Title: Stunning Rave-Themed Developer Portfolio
+Project Type: Full-Stack Personal Portfolio Website
+Goal: Build a visually stunning, modern, interactive portfolio website with a unique rave-inspired aesthetic, smooth animations, and 3D elements.
+
+🧠 OVERVIEW
+
+Create a fully responsive, full-stack personal portfolio website using a modern JavaScript stack. The site must be highly visual, animated, and immersive, with a futuristic rave / neon cyberpunk aesthetic. It should feel energetic, premium, and creative — not a basic template.
+
+The website should showcase a developer’s profile, skills, experience, and projects in an engaging, interactive way.
+
+⚙️ TECH STACK REQUIREMENTS
+
+Use the following technologies:
+
+Frontend
+
+React.js
+
+Next.js (App Router preferred)
+
+TypeScript
+
+Barba.js (for smooth page transitions)
+
+Three.js (for 3D visuals, animated backgrounds, or interactive elements)
+
+Backend
+
+Node.js
+
+Express.js (if needed for API routes beyond Next.js)
+
+MySQL (store contact form submissions and optional project data)
+
+Development Environment
+
+The project must be structured so it can run in Cursor, Antigravity, or Replit
+
+Use clear folder structure and setup instructions
+
+Include environment variables for DB connection
+
+🎨 DESIGN & AESTHETIC
+
+Theme: Rave / Neon / Cyberpunk / Futuristic
+
+Visual Style Guidelines
+
+Dark base background (deep purple, black, or midnight blue)
+
+Neon accent colors (electric blue, hot pink, neon green, ultraviolet)
+
+Glow effects, gradients, glassmorphism, and soft shadows
+
+Animated particles, light streaks, or floating 3D objects using Three.js
+
+Smooth page transitions using Barba.js
+
+Micro-interactions on hover (buttons, cards, links)
+
+Typography
+
+Bold futuristic headings
+
+Clean modern body font
+
+Large hero text with gradient or glow effect
+
+UI Feel
+
+Premium
+
+Energetic
+
+Creative developer brand
+
+Smooth and immersive, not static
+
+🧩 WEBSITE STRUCTURE
+🔝 Global Components
+
+Header (Navigation Bar)
+
+Sticky, responsive navbar
+
+Logo or name on the left
+
+Navigation links: Home, About, Experience, Skills, Projects, Education, Contact
+
+Mobile hamburger menu with animation
+
+Neon hover effects
+
+Footer
+
+Social media icons (GitHub, LinkedIn, etc.)
+
+Email contact
+
+Copyright text
+
+Subtle neon divider line or glow border
+
+🏠 LANDING PAGE (HOME)
+
+Purpose: Immediate visual impact.
+
+Include:
+
+Full-screen hero section
+
+Animated 3D or particle background using Three.js
+
+Developer name in large glowing text
+
+Short tagline (e.g., “Full Stack Developer | Creative Technologist”)
+
+Call-to-action buttons:
+
+“View Projects”
+
+“Contact Me”
+
+Smooth scroll indicator
+
+👤 ABOUT PAGE
+
+Include:
+
+Profile image or 3D avatar frame
+
+Short bio describing background, passion, and focus areas
+
+Animated section reveals on scroll
+
+Fun personal highlights or interests
+
+💼 EXPERIENCE SECTION
+
+Display professional experience in a timeline or card layout:
+
+Job Title
+
+Company Name
+
+Duration
+
+Key responsibilities and achievements
+
+Hover glow or animated border effects
+
+🛠 SKILLS SECTION
+
+Showcase technical skills in an interactive way:
+
+Categorized skills (Frontend, Backend, Tools, etc.)
+
+Animated progress bars, glowing skill pills, or orbiting skill icons
+
+Hover animations with descriptions
+
+🚀 PROJECTS SECTION
+
+Feature key projects in visually rich cards:
+
+Project image or animated preview
+
+Project name
+
+Short description
+
+Tech stack used
+
+Buttons: “Live Demo” and “GitHub”
+
+Modal or separate page for detailed project view
+
+Subtle 3D tilt or glow hover effect
+
+🎓 EDUCATION SECTION
+
+Display:
+
+Degree
+
+Institution
+
+Duration
+
+Relevant coursework or achievements
+
+Styled as cards or vertical timeline
+
+📬 CONTACT PAGE
+
+Include:
+
+Contact form with:
+
+Name
+
+Email
+
+Message
+
+Backend API to store messages in MySQL
+
+Success/error animations
+
+Optional social links section
+
+Subtle animated background
+
+🔧 BACKEND REQUIREMENTS
+
+Create a backend (or Next.js API routes) that:
+
+Connects to MySQL
+
+Stores contact form submissions in a database table
+
+Uses environment variables for DB credentials
+
+Includes basic validation and error handling
+
+✨ ANIMATION & INTERACTION
+
+Use Barba.js for smooth page transitions (fade, slide, or glow transitions)
+
+Use Three.js for at least one of the following:
+
+Animated hero background
+
+Floating geometric shapes
+
+Interactive cursor-based effect
+
+Scroll-triggered animations (fade-ins, slide-ups, glow reveals)
+
+📱 RESPONSIVENESS
+
+Fully responsive across mobile, tablet, and desktop
+
+Adjust neon/glow effects to remain readable on small screens
+
+Optimized performance (lazy loading where possible)
+
+📁 PROJECT STRUCTURE
+
+Generate a clean folder structure including:
+
+/components
+
+/pages or /app
+
+/styles
+
+/lib (for DB connection)
+
+/api routes
+
+/public assets
+
+Include setup steps:
+
+Install dependencies
+
+Set environment variables
+
+Run development server
+
+🏁 FINAL OUTPUT EXPECTATION
+
+The result should be:
+
+A complete full-stack portfolio website
+
+Visually stunning with rave/cyberpunk aesthetics
+
+Smooth animated transitions
+
+Interactive 3D elements
+
+Functional contact form with database storage
+
+Clean, maintainable TypeScript code
