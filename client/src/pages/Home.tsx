@@ -1,13 +1,13 @@
 import { Canvas } from "@react-three/fiber";
 import { Stars } from "@/components/canvas/RaveScene";
 import { motion } from "framer-motion";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
+    <div className="relative min-h-screen w-full flex items-center justify-start overflow-hidden">
       {/* 3D Background */}
       <div className="absolute inset-0 z-0">
         <Canvas camera={{ position: [0, 0, 1] }}>
@@ -16,26 +16,26 @@ export default function Home() {
       </div>
 
       {/* Content */}
-      <div className="container z-10 px-4 flex flex-col items-center text-center">
+      <div className="container z-10 px-4 md:px-12 flex flex-col items-start text-left">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="mb-6"
+          className="mb-6 max-w-2xl"
         >
-          <span className="inline-block py-1 px-3 rounded-full border border-primary/50 bg-primary/10 text-primary text-sm font-display tracking-widest uppercase mb-4 box-glow">
+          <span className="inline-block py-1 px-3 rounded-full border border-primary/50 bg-primary/10 text-primary text-xs font-display tracking-widest uppercase mb-4 box-glow">
             Available for Hire
           </span>
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-black font-display text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-secondary animate-gradient-x pb-4 leading-tight max-w-4xl mx-auto">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-black font-display text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-secondary animate-gradient-x pb-4 leading-tight">
             NISHANTH S BUILDING RELIABLE SYSTEMS WITH ELEGANT USER EXPERIENCE
           </h1>
         </motion.div>
 
         <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
-          className="text-xl md:text-2xl text-muted-foreground max-w-2xl font-body mb-8"
+          className="text-lg md:text-xl text-muted-foreground max-w-xl font-body mb-8"
         >
           Creative Technologist focused on immersive and functional web experiences.
         </motion.p>
@@ -63,7 +63,7 @@ export default function Home() {
       <motion.div 
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-muted-foreground"
+        className="absolute bottom-10 left-10 text-muted-foreground"
       >
         <div className="w-6 h-10 border-2 border-muted-foreground rounded-full flex justify-center p-1">
           <div className="w-1 h-3 bg-primary rounded-full" />
