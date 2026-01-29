@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Code2, Plane, Brain, ShieldAlert } from "lucide-react";
+import { ExternalLink, Github, Code2, Plane, Brain } from "lucide-react";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -10,7 +10,7 @@ const projects = [
     description: "SkySmart is an AI-powered flight booking platform that helps users find the best and most affordable flights. It provides smart recommendations and price drop alerts.",
     tags: ["TypeScript", "AI", "React", "Next.js"],
     icon: <Plane className="w-12 h-12 text-primary" />,
-    image: "bg-gradient-to-br from-indigo-900 via-blue-900 to-black",
+    image: "/skyai.png",
     demoLink: "https://github.com/Nishanth17S/SKYAI",
     repoLink: "https://github.com/Nishanth17S/SKYAI"
   },
@@ -20,7 +20,7 @@ const projects = [
     description: "AI-powered flight booking platform that makes travel easier and more affordable. It tracks real-time fares and notifies users when prices drop.",
     tags: ["TypeScript", "Tailwind", "API Integration"],
     icon: <Code2 className="w-12 h-12 text-secondary" />,
-    image: "bg-gradient-to-br from-cyan-900 via-blue-900 to-black",
+    image: "/skysmart.png",
     demoLink: "https://github.com/Nishanth17S/Skysmart",
     repoLink: "https://github.com/Nishanth17S/Skysmart"
   },
@@ -30,7 +30,7 @@ const projects = [
     description: "A digital system designed to provide mental health support and intervention strategies through an intuitive and accessible platform.",
     tags: ["JavaScript", "HealthTech", "UI/UX"],
     icon: <Brain className="w-12 h-12 text-accent" />,
-    image: "bg-gradient-to-br from-emerald-900 via-teal-900 to-black",
+    image: "/mental-health.png",
     demoLink: "https://github.com/Nishanth17S/mental-health-intervention-system",
     repoLink: "https://github.com/Nishanth17S/mental-health-intervention-system"
   }
@@ -60,7 +60,12 @@ export default function Projects() {
               transition={{ delay: index * 0.1, duration: 0.5 }}
             >
               <Card className="h-full bg-muted/10 backdrop-blur-md border-primary/20 hover:border-primary/50 transition-all duration-300 hover:box-glow overflow-hidden group">
-                <div className={`h-48 w-full ${project.image} relative overflow-hidden flex items-center justify-center`}>
+                <div className="h-48 w-full relative overflow-hidden flex items-center justify-center">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-60 group-hover:opacity-80"
+                  />
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors" />
                   <div className="relative z-10 transform group-hover:scale-110 transition-transform duration-500">
                     {project.icon}

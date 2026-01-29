@@ -26,10 +26,10 @@ export default function Home() {
           <span className="inline-block py-1 px-3 rounded-full border border-primary/50 bg-primary/10 text-primary text-sm font-display tracking-widest uppercase mb-4 box-glow">
             Available for Hire
           </span>
-          <h1 className="text-5xl md:text-8xl font-black font-display text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-secondary animate-gradient-x pb-4">
-            CREATIVE
+          <h1 className="text-4xl md:text-7xl font-black font-display text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-secondary animate-gradient-x pb-4">
+            NISHANTH'S
             <br />
-            TECHNOLOGIST
+            PORTFOLIO
           </h1>
         </motion.div>
 
@@ -39,10 +39,8 @@ export default function Home() {
           transition={{ delay: 0.4, duration: 0.8 }}
           className="text-xl md:text-2xl text-muted-foreground max-w-2xl font-body mb-8"
         >
-          Building immersive web experiences with{" "}
-          <span className="text-secondary text-glow-cyan">React</span>,{" "}
-          <span className="text-primary text-glow">Three.js</span>, and{" "}
-          <span className="text-accent text-glow">Node.js</span>.
+          Building reliable systems with{" "}
+          <span className="text-secondary text-glow-cyan">elegant user experience</span>.
         </motion.p>
 
         <motion.div

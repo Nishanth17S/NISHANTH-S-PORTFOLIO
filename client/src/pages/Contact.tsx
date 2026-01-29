@@ -72,7 +72,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-display font-bold text-white">Email</h3>
-                    <p className="text-muted-foreground text-sm">hello@neondev.com</p>
+                    <p className="text-muted-foreground text-sm">nishanth67923@gmail.com</p>
                   </div>
                 </CardContent>
               </Card>
@@ -84,7 +84,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-display font-bold text-white">Location</h3>
-                    <p className="text-muted-foreground text-sm">San Francisco, CA</p>
+                    <p className="text-muted-foreground text-sm">Karnataka, India</p>
                   </div>
                 </CardContent>
               </Card>
@@ -96,7 +96,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-display font-bold text-white">Availability</h3>
-                    <p className="text-muted-foreground text-sm">Open for freelance</p>
+                    <p className="text-muted-foreground text-sm">7975057085</p>
                   </div>
                 </CardContent>
               </Card>

@@ -36,8 +36,8 @@ export default function Navbar() {
           <div className="p-2 border border-primary rounded-md group-hover:bg-primary/20 transition-colors">
             <Code2 className="w-6 h-6 text-primary group-hover:text-white transition-colors animate-pulse" />
           </div>
-          <span className="font-display font-bold text-2xl tracking-widest text-white group-hover:text-glow transition-all">
-            NEON<span className="text-primary">DEV</span>
+          <span className="font-display font-bold text-lg md:text-2xl tracking-widest text-white group-hover:text-glow transition-all">
+            NISHANTH'S <span className="text-primary">PORTFOLIO</span>
           </span>
         </Link>
 
