@@ -26,10 +26,8 @@ export default function Home() {
           <span className="inline-block py-1 px-3 rounded-full border border-primary/50 bg-primary/10 text-primary text-sm font-display tracking-widest uppercase mb-4 box-glow">
             Available for Hire
           </span>
-          <h1 className="text-4xl md:text-7xl font-black font-display text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-secondary animate-gradient-x pb-4">
-            NISHANTH'S
-            <br />
-            PORTFOLIO
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-black font-display text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-secondary animate-gradient-x pb-4 leading-tight max-w-4xl mx-auto">
+            NISHANTH S BUILDING RELIABLE SYSTEMS WITH ELEGANT USER EXPERIENCE
           </h1>
         </motion.div>
 
@@ -39,8 +37,7 @@ export default function Home() {
           transition={{ delay: 0.4, duration: 0.8 }}
           className="text-xl md:text-2xl text-muted-foreground max-w-2xl font-body mb-8"
         >
-          Building reliable systems with{" "}
-          <span className="text-secondary text-glow-cyan">elegant user experience</span>.
+          Creative Technologist focused on immersive and functional web experiences.
         </motion.p>
 
         <motion.div
