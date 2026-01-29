@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import { User, Heart, Coffee, Terminal } from "lucide-react";
+import { Heart, Coffee, Terminal } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import profilePhoto from "@assets/photo_1769678054761.jpeg";
 
 export default function About() {
   return (
@@ -25,9 +26,12 @@ export default function About() {
             transition={{ delay: 0.2, duration: 0.5 }}
             className="relative"
           >
-            <div className="aspect-square rounded-2xl overflow-hidden border-2 border-primary/50 box-glow relative z-10 bg-muted/50 backdrop-blur-sm flex items-center justify-center">
-              {/* Placeholder for avatar */}
-              <User className="w-32 h-32 text-primary/50" />
+            <div className="aspect-[3/4] rounded-2xl overflow-hidden border-2 border-primary/50 box-glow relative z-10 bg-muted/50 backdrop-blur-sm">
+              <img 
+                src={profilePhoto} 
+                alt="Nishanth S" 
+                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+              />
             </div>
             {/* Decorative elements behind */}
             <div className="absolute -top-4 -left-4 w-full h-full border-2 border-secondary rounded-2xl -z-0 opacity-50" />
