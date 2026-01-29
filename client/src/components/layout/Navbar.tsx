@@ -31,7 +31,7 @@ export default function Navbar() {
         scrolled ? "bg-background/80 backdrop-blur-md border-b border-primary/20" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-4 h-20 flex items-center justify-between">
+      <div className="w-full px-4 md:px-12 h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group cursor-pointer">
           <div className="p-2 border border-primary rounded-md group-hover:bg-primary/20 transition-colors">
             <Code2 className="w-6 h-6 text-primary group-hover:text-white transition-colors animate-pulse" />
