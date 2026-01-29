@@ -21,13 +21,18 @@ export default function Home() {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="mb-6 max-w-2xl"
+          className="mb-6 max-w-4xl"
         >
           <span className="inline-block py-1 px-3 rounded-full border border-primary/50 bg-primary/10 text-primary text-xs font-display tracking-widest uppercase mb-4 box-glow">
             Available for Hire
           </span>
-          <h1 className="text-2xl md:text-4xl lg:text-5xl font-black font-display text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-secondary animate-gradient-x pb-4 leading-tight">
-            NISHANTH S BUILDING RELIABLE SYSTEMS WITH ELEGANT USER EXPERIENCE
+          <h1 className="font-display font-black leading-tight flex flex-col items-start">
+            <span className="text-3xl md:text-5xl lg:text-7xl text-white pb-2">
+              NISHANTH S
+            </span>
+            <span className="text-xl md:text-2xl lg:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-secondary animate-gradient-x">
+              BUILDING RELIABLE SYSTEMS WITH ELEGANT USER EXPERIENCE
+            </span>
           </h1>
         </motion.div>
 
