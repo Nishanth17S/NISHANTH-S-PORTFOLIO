@@ -1,44 +1,38 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Code2 } from "lucide-react";
+import { ExternalLink, Github, Code2, Plane, Brain, ShieldAlert } from "lucide-react";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
 const projects = [
   {
     id: 1,
-    title: "Cyberpunk Dashboard",
-    description: "A real-time analytics dashboard with a futuristic UI design, featuring live data visualization and customizable widgets.",
-    tags: ["React", "D3.js", "Tailwind"],
-    image: "bg-gradient-to-br from-purple-900 to-black", // Placeholder class
-    demoLink: "#",
-    repoLink: "#"
+    title: "SKYAI",
+    description: "SkySmart is an AI-powered flight booking platform that helps users find the best and most affordable flights. It provides smart recommendations and price drop alerts.",
+    tags: ["TypeScript", "AI", "React", "Next.js"],
+    icon: <Plane className="w-12 h-12 text-primary" />,
+    image: "bg-gradient-to-br from-indigo-900 via-blue-900 to-black",
+    demoLink: "https://github.com/Nishanth17S/SKYAI",
+    repoLink: "https://github.com/Nishanth17S/SKYAI"
   },
   {
     id: 2,
-    title: "Neon E-Commerce",
-    description: "Full-stack e-commerce platform for digital assets. Includes 3D product previews and crypto payment integration.",
-    tags: ["Next.js", "Three.js", "Stripe"],
-    image: "bg-gradient-to-br from-blue-900 to-black",
-    demoLink: "#",
-    repoLink: "#"
+    title: "Skysmart",
+    description: "AI-powered flight booking platform that makes travel easier and more affordable. It tracks real-time fares and notifies users when prices drop.",
+    tags: ["TypeScript", "Tailwind", "API Integration"],
+    icon: <Code2 className="w-12 h-12 text-secondary" />,
+    image: "bg-gradient-to-br from-cyan-900 via-blue-900 to-black",
+    demoLink: "https://github.com/Nishanth17S/Skysmart",
+    repoLink: "https://github.com/Nishanth17S/Skysmart"
   },
   {
     id: 3,
-    title: "AI Chat Interface",
-    description: "An elegant interface for interacting with LLMs. Features streaming responses, code syntax highlighting, and chat history.",
-    tags: ["TypeScript", "OpenAI API", "Vite"],
-    image: "bg-gradient-to-br from-green-900 to-black",
-    demoLink: "#",
-    repoLink: "#"
-  },
-  {
-    id: 4,
-    title: "Audio Visualizer",
-    description: "Interactive 3D audio visualizer that reacts to microphone input or uploaded audio files.",
-    tags: ["Three.js", "Web Audio API", "React"],
-    image: "bg-gradient-to-br from-pink-900 to-black",
-    demoLink: "#",
-    repoLink: "#"
+    title: "Mental Health Intervention",
+    description: "A digital system designed to provide mental health support and intervention strategies through an intuitive and accessible platform.",
+    tags: ["JavaScript", "HealthTech", "UI/UX"],
+    icon: <Brain className="w-12 h-12 text-accent" />,
+    image: "bg-gradient-to-br from-emerald-900 via-teal-900 to-black",
+    demoLink: "https://github.com/Nishanth17S/mental-health-intervention-system",
+    repoLink: "https://github.com/Nishanth17S/mental-health-intervention-system"
   }
 ];
 
@@ -57,7 +51,7 @@ export default function Projects() {
           <div className="h-1 w-24 bg-primary mx-auto rounded-full box-glow" />
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
@@ -66,17 +60,19 @@ export default function Projects() {
               transition={{ delay: index * 0.1, duration: 0.5 }}
             >
               <Card className="h-full bg-muted/10 backdrop-blur-md border-primary/20 hover:border-primary/50 transition-all duration-300 hover:box-glow overflow-hidden group">
-                <div className={`h-48 w-full ${project.image} relative overflow-hidden group-hover:scale-105 transition-transform duration-500`}>
-                  <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <Code2 className="w-12 h-12 text-white" />
+                <div className={`h-48 w-full ${project.image} relative overflow-hidden flex items-center justify-center`}>
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors" />
+                  <div className="relative z-10 transform group-hover:scale-110 transition-transform duration-500">
+                    {project.icon}
                   </div>
+                  <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
                 
                 <CardHeader>
                   <CardTitle className="font-display text-2xl text-white group-hover:text-primary transition-colors">
                     {project.title}
                   </CardTitle>
-                  <CardDescription>
+                  <CardDescription className="line-clamp-3">
                     {project.description}
                   </CardDescription>
                 </CardHeader>
@@ -91,15 +87,15 @@ export default function Projects() {
                   </div>
                 </CardContent>
                 
-                <CardFooter className="flex justify-between mt-auto">
-                  <Button variant="outline" size="sm" className="border-primary/50 text-primary hover:bg-primary hover:text-white" asChild>
+                <CardFooter className="flex justify-between mt-auto gap-4">
+                  <Button variant="outline" size="sm" className="flex-1 border-primary/50 text-primary hover:bg-primary hover:text-white" asChild>
                     <a href={project.repoLink} target="_blank" rel="noopener noreferrer">
                       <Github className="w-4 h-4 mr-2" /> Code
                     </a>
                   </Button>
-                  <Button size="sm" className="bg-primary text-white hover:bg-primary/80 box-glow border-none" asChild>
+                  <Button size="sm" className="flex-1 bg-primary text-white hover:bg-primary/80 box-glow border-none" asChild>
                     <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="w-4 h-4 mr-2" /> Live Demo
+                      <ExternalLink className="w-4 h-4 mr-2" /> Details
                     </a>
                   </Button>
                 </CardFooter>
