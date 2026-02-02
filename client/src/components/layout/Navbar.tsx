@@ -1,12 +1,12 @@
 import { Link, useLocation } from "wouter";
 import { useState, useEffect } from "react";
-import { Menu, X, Code2, Home, User, Briefcase, Cpu, FolderOpen, Mail } from "lucide-react";
+import { Menu, X, Code2, Home, User, GraduationCap, Cpu, FolderOpen, Mail } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const links = [
   { href: "/", label: "Home", icon: Home },
   { href: "/about", label: "About", icon: User },
-  { href: "/experience", label: "Experience", icon: Briefcase },
+  { href: "/education", label: "Education", icon: GraduationCap },
   { href: "/skills", label: "Skills", icon: Cpu },
   { href: "/projects", label: "Projects", icon: FolderOpen },
   { href: "/contact", label: "Contact", icon: Mail },
