@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Code2, Plane, Brain } from "lucide-react";
+import { ExternalLink, Github, Code2, Plane, Brain, Sparkles } from "lucide-react";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -33,6 +33,16 @@ const projects = [
     image: "/mental-health.png",
     demoLink: "https://github.com/Nishanth17S/mental-health-intervention-system",
     repoLink: "https://github.com/Nishanth17S/mental-health-intervention-system"
+  },
+  {
+    id: 4,
+    title: "Personal Portfolio",
+    description: "A high-energy, rave-themed personal portfolio showcasing projects and skills with interactive 3D elements and custom neon design.",
+    tags: ["React", "Three.js", "Framer Motion", "Tailwind"],
+    icon: <Sparkles className="w-12 h-12 text-primary" />,
+    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800",
+    demoLink: "/",
+    repoLink: "https://github.com/Nishanth17S"
   }
 ];
 
