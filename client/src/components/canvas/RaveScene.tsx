@@ -66,27 +66,27 @@ export default function RaveScene() {
 
   return (
     <div className="fixed inset-0 z-0 bg-background pointer-events-none overflow-hidden">
-      {/* Primary Neon Spotlight */}
+      {/* Darker Primary Neon Spotlight */}
       <div 
-        className="absolute w-[800px] h-[800px] rounded-full opacity-30 blur-[120px] pointer-events-none mix-blend-screen transition-opacity duration-500"
+        className="absolute w-[800px] h-[800px] rounded-full opacity-15 blur-[120px] pointer-events-none mix-blend-screen transition-opacity duration-500"
         style={{
-          background: `radial-gradient(circle, hsl(var(--primary) / 0.4) 0%, transparent 70%)`,
+          background: `radial-gradient(circle, hsl(var(--primary) / 0.3) 0%, transparent 70%)`,
           transform: `translate(${mousePos.x - 400}px, ${mousePos.y - 400}px)`,
         }}
       />
 
-      {/* Secondary Cyan Trail Glow */}
+      {/* Darker Secondary Cyan Trail Glow */}
       <div 
-        className="absolute w-[400px] h-[400px] rounded-full opacity-20 blur-[100px] pointer-events-none mix-blend-overlay transition-transform duration-1000 ease-out"
+        className="absolute w-[400px] h-[400px] rounded-full opacity-10 blur-[100px] pointer-events-none mix-blend-overlay transition-transform duration-1000 ease-out"
         style={{
-          background: `radial-gradient(circle, hsl(var(--secondary) / 0.5) 0%, transparent 70%)`,
+          background: `radial-gradient(circle, hsl(var(--secondary) / 0.4) 0%, transparent 70%)`,
           transform: `translate(${mousePos.x - 200}px, ${mousePos.y - 200}px)`,
         }}
       />
 
-      {/* Cyberpunk Grid/Mesh Light Effect (Optional Layer for texture) */}
+      {/* Dimmer Cyberpunk Grid/Mesh Light Effect */}
       <div 
-        className="absolute inset-0 opacity-[0.03] pointer-events-none"
+        className="absolute inset-0 opacity-[0.015] pointer-events-none"
         style={{
           backgroundImage: `radial-gradient(circle at ${mousePos.x}px ${mousePos.y}px, hsl(var(--primary)) 0%, transparent 40%)`,
           backgroundSize: '40px 40px',
