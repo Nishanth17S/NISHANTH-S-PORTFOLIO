@@ -48,32 +48,29 @@
 
 :root {
   /* Dark Rave Theme - Defaulting to dark mode essentially */
-  --background: 240 80% 6%; /* Deep Midnight Blue #03031C */
+  --background: 240 100% 2%; /* Even Darker Midnight Blue */
   --foreground: 180 100% 90%; /* Icy White */
 
-  --card: 240 50% 10%; /* Slightly lighter dark */
+  --card: 240 50% 5%; /* Darker card */
   --card-foreground: 180 100% 90%;
 
-  --popover: 240 50% 10%;
+  --popover: 240 50% 5%;
   --popover-foreground: 180 100% 90%;
 
   --primary: 300 100% 50%; /* Neon Pink #FF00FF */
   --primary-foreground: 240 100% 98%;
 
   --secondary: 180 100% 50%; /* Cyan #00FFFF */
-  --secondary-foreground: 240 80% 6%;
+  --secondary-foreground: 240 100% 2%;
 
-  --muted: 240 30% 20%;
-  --muted-foreground: 240 20% 70%;
+  --muted: 240 30% 10%;
+  --muted-foreground: 240 20% 60%;
 
-  --accent: 120 100% 50%; /* Neon Green #00FF00 (Used for highlights) */
-  --accent-foreground: 240 80% 6%;
+  --accent: 120 100% 50%; /* Neon Green #00FF00 */
+  --accent-foreground: 240 100% 2%;
 
-  --destructive: 0 100% 60%;
-  --destructive-foreground: 210 40% 98%;
-
-  --border: 240 30% 20%;
-  --input: 240 30% 20%;
+  --border: 240 30% 10%;
+  --input: 240 30% 10%;
   --ring: 300 100% 50%;
 
   --radius: 0.5rem;
