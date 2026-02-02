@@ -51,10 +51,8 @@ function Stars(props: any) {
 
 export default function RaveScene() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    setIsMobile('ontouchstart' in window);
     const handleMouseMove = (e: MouseEvent) => {
       setMousePos({ x: e.clientX, y: e.clientY });
     };
@@ -62,34 +60,32 @@ export default function RaveScene() {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
-  if (isMobile) return <div className="fixed inset-0 z-0 bg-background pointer-events-none" />;
-
   return (
     <div className="fixed inset-0 z-0 bg-background pointer-events-none overflow-hidden">
-      {/* Darker Primary Neon Spotlight */}
+      {/* Primary Neon Spotlight - Increased opacity for visibility */}
       <div 
-        className="absolute w-[800px] h-[800px] rounded-full opacity-15 blur-[120px] pointer-events-none mix-blend-screen transition-opacity duration-500"
+        className="absolute w-[600px] h-[600px] rounded-full opacity-40 blur-[100px] pointer-events-none mix-blend-screen transition-opacity duration-300"
         style={{
-          background: `radial-gradient(circle, hsl(var(--primary) / 0.3) 0%, transparent 70%)`,
-          transform: `translate(${mousePos.x - 400}px, ${mousePos.y - 400}px)`,
+          background: `radial-gradient(circle, hsl(var(--primary) / 0.5) 0%, transparent 70%)`,
+          transform: `translate(${mousePos.x - 300}px, ${mousePos.y - 300}px)`,
         }}
       />
 
-      {/* Darker Secondary Cyan Trail Glow */}
+      {/* Secondary Cyan Trail Glow - Increased opacity for visibility */}
       <div 
-        className="absolute w-[400px] h-[400px] rounded-full opacity-10 blur-[100px] pointer-events-none mix-blend-overlay transition-transform duration-1000 ease-out"
+        className="absolute w-[300px] h-[300px] rounded-full opacity-30 blur-[80px] pointer-events-none mix-blend-overlay transition-transform duration-700 ease-out"
         style={{
-          background: `radial-gradient(circle, hsl(var(--secondary) / 0.4) 0%, transparent 70%)`,
-          transform: `translate(${mousePos.x - 200}px, ${mousePos.y - 200}px)`,
+          background: `radial-gradient(circle, hsl(var(--secondary) / 0.6) 0%, transparent 70%)`,
+          transform: `translate(${mousePos.x - 150}px, ${mousePos.y - 150}px)`,
         }}
       />
 
-      {/* Dimmer Cyberpunk Grid/Mesh Light Effect */}
+      {/* Subtle grid mesh underneath cursor */}
       <div 
-        className="absolute inset-0 opacity-[0.015] pointer-events-none"
+        className="absolute inset-0 opacity-[0.05] pointer-events-none"
         style={{
-          backgroundImage: `radial-gradient(circle at ${mousePos.x}px ${mousePos.y}px, hsl(var(--primary)) 0%, transparent 40%)`,
-          backgroundSize: '40px 40px',
+          backgroundImage: `radial-gradient(circle at ${mousePos.x}px ${mousePos.y}px, hsl(var(--primary)) 0%, transparent 30%)`,
+          backgroundSize: '30px 30px',
           backgroundPosition: 'center',
         }}
       />
