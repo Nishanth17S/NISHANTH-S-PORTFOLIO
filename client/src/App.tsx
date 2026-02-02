@@ -12,7 +12,7 @@ import Skills from "@/pages/Skills";
 import Projects from "@/pages/Projects";
 import Contact from "@/pages/Contact";
 import NotFound from "@/pages/not-found";
-import { AnimatePresence } from "framer-motion";
+import RaveScene from "@/components/canvas/RaveScene";
 
 function Router() {
   return (
@@ -32,9 +32,10 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <div className="min-h-screen bg-background text-foreground flex flex-col font-body antialiased selection:bg-primary selection:text-white">
+        <div className="min-h-screen bg-background text-foreground flex flex-col font-body antialiased selection:bg-primary selection:text-white relative">
+          <RaveScene />
           <Navbar />
-          <main className="flex-grow">
+          <main className="flex-grow relative z-10">
             <Router />
           </main>
           <Footer />
