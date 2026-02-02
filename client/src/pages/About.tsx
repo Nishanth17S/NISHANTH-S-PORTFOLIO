@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
-import { Heart, Coffee, Terminal } from "lucide-react";
+import { Heart, Coffee, Terminal, Download, Send } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 import profilePhoto from "@assets/photo_1769678054761.jpeg";
 
 export default function About() {
@@ -59,7 +61,7 @@ export default function About() {
               responsive design, and interactive elements to create a harmonious user experience.
             </p>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4 mb-8">
               <Card className="bg-muted/20 border-primary/20 hover:border-primary/50 transition-colors">
                 <CardContent className="p-4 flex items-center gap-3">
                   <Terminal className="w-5 h-5 text-secondary" />
@@ -78,6 +80,21 @@ export default function About() {
                   <span className="font-display">Energy</span>
                 </CardContent>
               </Card>
+            </div>
+
+            <div className="flex flex-wrap gap-4">
+              <Link href="/contact">
+                <Button className="bg-primary hover:bg-primary/80 text-white px-6 py-4 rounded-xl font-display tracking-wider box-glow transition-all hover:scale-105 flex items-center gap-2">
+                  <Send className="w-4 h-4" />
+                  HIRE ME
+                </Button>
+              </Link>
+              <a href="/assets/resume.pdf" download="Nishanth_S_Resume.pdf">
+                <Button variant="outline" className="border-secondary text-secondary hover:bg-secondary/10 px-6 py-4 rounded-xl font-display tracking-wider transition-all hover:scale-105 flex items-center gap-2">
+                  <Download className="w-4 h-4" />
+                  RESUME
+                </Button>
+              </a>
             </div>
           </motion.div>
         </div>
